@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.QRCode</id>
+    <version>0.0.1-alpha</version>
+    <title>VL.QRCode</title>
+    <authors>vvvv, zxing</authors>
+    <owners>vvvv</owners>
+    <projectUrl>https://github.com/vvvv/VL.QRCode</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>QRCode encoder for VL</summary>
+    <description>QRCode encoder for VL</description>
+    <tags>VL, zxing</tags>
+	<license type="expression">Apache-2.0</license>
+	<icon>icon\nugeticon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+	<file src="nugeticon.png" target="icon\" />
+  </files>
+</package>
