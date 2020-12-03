@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="B0XDhEu43EWNBKb8PJAlu3" LanguageVersion="2020.2.4.330" Version="0.128">
+  <NugetDependency Id="RQdFPSVnKhDMcFQRhY42Yi" Location="VL.CoreLib" Version="2020.2.4-0329-g9de69ed14b" />
+  <Patch Id="VUI6WiMA6JzN5QzO9beQx9">
+    <Canvas Id="SOxI5djNdq9OKFT8ADsTlK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="JlwjjyO60m1Ne5OMm3qMSZ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="IAtIBOIFichNV756IUFI0b">
+        <Canvas Id="CIL2djmapJEOXNOG7gH7sP" CanvasType="Group">
+          <Node Bounds="430,289,89,19" Id="RiZayRfaDXpMJJvwwC1qxg">
+            <p:NodeReference LastCategoryFullName="IO.Barcode" LastSymbolSource="VL.QRCode.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="QRCodeEncoder" />
+            </p:NodeReference>
+            <Pin Id="Eh4dhYGVxUsMlxGHwcJxGw" Name="Contents" Kind="InputPin" />
+            <Pin Id="UaX1sqLgCiZNZOebCQvoc7" Name="Quiet Zone" Kind="InputPin" />
+            <Pin Id="EvuNGnKZS98Ns6FRPBkaBf" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="430,380,56,19" Id="Vn5lamUOFM8M4JfEboHS1R">
+            <p:NodeReference LastCategoryFullName="IO.Barcode" LastSymbolSource="VL.QRCode.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToImage" />
+              <CategoryReference Kind="Category" Name="Barcode" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="OfRiEDByHhMNGE9RjxbvhP" Name="Input" Kind="InputPin" />
+            <Pin Id="DFRd5KaqnP3MMQnWkZc9Wv" Name="Pixel Size" Kind="InputPin" />
+            <Pin Id="VDHssdO6GkIPvusF9dc4J7" Name="Invert" Kind="InputPin" />
+            <Pin Id="DURf9P76J7UP7BIMgcTWN3" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GIP0XEjGkm8M56O701YaFs" Comment="" Bounds="432,438,234,130" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Q4njTcU9wq9MVUyZbe1Grv" Comment="Contents" Bounds="413,243,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="TcZtpQjKw5UPvjIAJfwASm" Comment="Pixel Size" Bounds="503,342,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="UULLZ1Q49QZLLEZ2qYLJtV" Comment="Invert" Bounds="502,368,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KvczHWoPfZ0NiLYRby6990" Comment="Quiet Zone" Bounds="516,273,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="PFGGEdVdyHNNIZqKxyDfBW" Name="Create" />
+        <Patch Id="BlZORjfaxSpPJJ7rxmyljO" Name="Update" />
+        <ProcessDefinition Id="P5pfaHjVR3FNb6NzCQjT9E">
+          <Fragment Id="ECsNG22adtcLd1hmPkBjRG" Patch="PFGGEdVdyHNNIZqKxyDfBW" Enabled="true" />
+          <Fragment Id="Mv7I4gp4qX6OyDGkBAigOP" Patch="BlZORjfaxSpPJJ7rxmyljO" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="StucJw2MmapOlRF9YZhLYx" Ids="EvuNGnKZS98Ns6FRPBkaBf,OfRiEDByHhMNGE9RjxbvhP" />
+        <Link Id="TXDNJN4KUfnMZHcp1O2F8C" Ids="DURf9P76J7UP7BIMgcTWN3,GIP0XEjGkm8M56O701YaFs" />
+        <Link Id="KO0J6sTwwJnNXoawug9QKE" Ids="Q4njTcU9wq9MVUyZbe1Grv,Eh4dhYGVxUsMlxGHwcJxGw" />
+        <Link Id="OMU9L037Uv7M5V8gddAD0C" Ids="TcZtpQjKw5UPvjIAJfwASm,DFRd5KaqnP3MMQnWkZc9Wv" />
+        <Link Id="L06b0lDXputOcgXyhOFQt3" Ids="UULLZ1Q49QZLLEZ2qYLJtV,VDHssdO6GkIPvusF9dc4J7" />
+        <Link Id="BzGzYG4YjE8PZFPRxfK08x" Ids="KvczHWoPfZ0NiLYRby6990,UaX1sqLgCiZNZOebCQvoc7" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="BA9pC3L9fL4M7RZZn5vFI5" Location="VL.Skia" Version="2020.2.4-0329-g9de69ed14b" />
+  <NugetDependency Id="IYqAn8HqBDlP7QwPFm3IIu" Location="VL.QRCode" Version="2020.2.4-0329-g9de69ed14b" />
+</Document>
