@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FuUnxYKxokXMyS5yQOceVH" Summary="A wrapper for the zxing qr-code library" Authors="vvvv group" Credits="https://github.com/micjahn/ZXing.Net" LicenseUrl="https://github.com/micjahn/ZXing.Net/blob/master/COPYING" ProjectUrl="https://vvvv.org/" LanguageVersion="2020.2.4.330" Version="0.128">
-  <NugetDependency Id="IAtRauiJDyMOXAth643W9i" Location="VL.CoreLib" Version="2020.2.4-0329-g9de69ed14b" />
+<Document xmlns:p="property" Id="RdcxjrwQCoxMaElrquZE6c" Summary="A wrapper for the zxing qr-code library" Authors="vvvv group" Credits="https://github.com/micjahn/ZXing.Net" LicenseUrl="https://github.com/micjahn/ZXing.Net/blob/master/COPYING" ProjectUrl="https://vvvv.org/" LanguageVersion="2020.3.0.75" Version="0.128">
+  <NugetDependency Id="IAtRauiJDyMOXAth643W9i" Location="VL.CoreLib" Version="2020.3.0-0075-g6ca65d0b48" />
   <Patch Id="GpDunvIQ9GGPmuU9GJYaB4">
     <Canvas Id="FsZDZKxUERtNB8jZQjnXIg" DefaultCategory="IO.Barcode" CanvasType="FullCategory">
       <!--
@@ -938,5 +938,5 @@
     </Node>
   </Patch>
   <PlatformDependency Id="HU2acGdPZaANr83Pc38vAm" Location="System.Drawing.dll" />
-  <PlatformDependency Id="NoDRPyCN5jtLCt4o2BlpPz" Location="./src/bin/Debug/net472/zxing.dll" />
+  <NugetDependency Id="Lr9X1Mm1UUqNUQcQSVEcuS" Location="ZXing.Net" Version="0.16.4" />
 </Document>
