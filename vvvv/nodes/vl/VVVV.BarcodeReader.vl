@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BzSPyvvemz0LRCYU4SI8sk" Summary="Barcode encoding and decoding" Authors="vvvv group" Credits="https://github.com/micjahn/ZXing.Net" LanguageVersion="2019.2.0-0342-6bc9b61985" Version="0.128" IsTrusted="true">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2019.2.0-0342-g6bc9b61985" />
+<Document xmlns:p="property" Id="BzSPyvvemz0LRCYU4SI8sk" Summary="Barcode encoding and decoding" Authors="vvvv group" Credits="https://github.com/micjahn/ZXing.Net" LanguageVersion="2021.4.11.1341" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2021.4.11" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.2d" CanvasType="FullCategory">
       <!--
@@ -23,31 +23,31 @@
             <Pin Id="IRjQpNjCQJSM4P1forf1ht" Name="Points" Kind="OutputPin" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
-            <Node Bounds="389,293,94,13" Id="EFyd9FUf81cL3fhbNvA0J2">
+            <Node Bounds="391,345,94,19" Id="EFyd9FUf81cL3fhbNvA0J2">
               <p:NodeReference LastCategoryFullName="IO.Barcode" LastSymbolSource="VL.ZXing.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="BarcodeReader" />
                 <CategoryReference Kind="Category" Name="Barcode" />
               </p:NodeReference>
-              <Pin Id="Ng6H6G2hTq1QIUwoIiXtCP" Name="Bitmap" Kind="InputPin" />
+              <Pin Id="MUgext894YnPwZEt0LIaTR" Name="Input" Kind="InputPin" />
               <Pin Id="DmZA6auQ1DgOSU2Mv3K2NM" Name="Decode" Kind="InputPin" />
               <Pin Id="AXHIVbDjt0FLZEygWOfQRi" Name="Text" Kind="OutputPin" />
               <Pin Id="TxfAyQm2sJyOzTnijr9qVc" Name="Format" Kind="OutputPin" />
               <Pin Id="CwlbRVVArNIP6OiXhNhGiz" Name="Points" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="MR28JNTq51OPvwjsivinXg" Bounds="389,60" />
-            <ControlPoint Id="G5ULucRIN4zLtkggwqfVGd" Bounds="508,94" />
-            <ControlPoint Id="DCtMmN7tFpgOj4Aka0uXz0" Bounds="396,352" />
-            <ControlPoint Id="QV9UZ30acAGM59PS2YUuMF" Bounds="464,352" />
-            <ControlPoint Id="JYLdTSu6v3kLOwxIGM6OW2" Bounds="539,346" />
-            <Node Bounds="378,163,89,107" Id="AB0xvU1hPAEPFOu2i4aZQI">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <ControlPoint Id="MR28JNTq51OPvwjsivinXg" Bounds="393,124" />
+            <ControlPoint Id="G5ULucRIN4zLtkggwqfVGd" Bounds="508,124" />
+            <ControlPoint Id="DCtMmN7tFpgOj4Aka0uXz0" Bounds="393,398" />
+            <ControlPoint Id="QV9UZ30acAGM59PS2YUuMF" Bounds="446,398" />
+            <ControlPoint Id="JYLdTSu6v3kLOwxIGM6OW2" Bounds="521,398" />
+            <Node Bounds="379,162,95,153" Id="AB0xvU1hPAEPFOu2i4aZQI">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
               <Pin Id="M0JvFsqFOWKPntGAjbPJCn" Name="Condition" Kind="InputPin" />
               <Patch Id="ODlut7sRu3mPQBE0W2Z4wz" ManuallySortedPins="true">
-                <Node Bounds="391,224,57,13" Id="EwcExHZ82FxQW9gmdhBu2B">
+                <Node Bounds="391,224,57,19" Id="EwcExHZ82FxQW9gmdhBu2B">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="CastAs" />
@@ -58,7 +58,7 @@
                   <Pin Id="EjKoAuClYPTN2LDta2Nf5l" Name="Result" Kind="OutputPin" />
                   <Pin Id="JQI8a9lf7t3ODFwuhcN3RD" Name="Success" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="391,186,65,13" Id="EOroEcBcCCZPnx8DZ4q5Hg">
+                <Node Bounds="391,186,71,19" Id="EOroEcBcCCZPnx8DZ4q5Hg">
                   <p:NodeReference LastCategoryFullName="System.Drawing.Image" LastSymbolSource="System.Drawing.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Image" />
@@ -69,9 +69,21 @@
                 </Node>
                 <Patch Id="V294vstHRRQNm4uzArV8qA" Name="Create" />
                 <Patch Id="DDzWfT9nNllOviqIiDrhlM" Name="Then" />
+                <Node Bounds="391,263,65,26" Id="I3urhANqji7PGs6xmYzeae">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Bitmap" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Bitmap" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToImage" />
+                  </p:NodeReference>
+                  <Pin Id="PQTEtbXrpfvPaMTMwNMGMR" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="NitrEhSQpffOK3vXCEkiM2" Name="Take Ownership" Kind="InputPin" />
+                  <Pin Id="JLdjaZBUzI8Oadp6NSJ31w" Name="Is Volatile" Kind="InputPin" DefaultValue="False" />
+                  <Pin Id="POBNdsNHRp9OwO1eLVbJZR" Name="Can Write" Kind="InputPin" />
+                  <Pin Id="D2Kj3HlrJkMOMpiwu4Wfzk" Name="Result" Kind="OutputPin" />
+                </Node>
               </Patch>
-              <ControlPoint Id="SUDrmac9HndLuE0cQg8iZr" Bounds="393,264" Alignment="Bottom" />
-              <ControlPoint Id="JUtIA0fr8BFPuLENboXvT1" Bounds="399,169" Alignment="Top" />
+              <ControlPoint Id="SUDrmac9HndLuE0cQg8iZr" Bounds="393,310" Alignment="Bottom" />
+              <ControlPoint Id="JUtIA0fr8BFPuLENboXvT1" Bounds="393,169" Alignment="Top" />
             </Node>
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
@@ -90,9 +102,10 @@
           <Link Id="BCK0rnLnTXKLB5hrntCiv4" Ids="MR28JNTq51OPvwjsivinXg,PHnU5a2tq0JP3jM4zu2qqN" />
           <Link Id="JBvzn5wVmRgPC3chbyWt6Z" Ids="QhKBLGB1vGxPgk0KdGPnz9,ChW2Yw0Da4hLQuTIXKw8EJ" />
           <Link Id="LW0clnGm89JQSopSH8kIuJ" Ids="JUtIA0fr8BFPuLENboXvT1,SUDrmac9HndLuE0cQg8iZr" IsFeedback="true" />
-          <Link Id="MqCXsTtIddiPE442P6jd1R" Ids="EjKoAuClYPTN2LDta2Nf5l,SUDrmac9HndLuE0cQg8iZr" />
-          <Link Id="PXImS8oozuXL6fufPjmmYw" Ids="SUDrmac9HndLuE0cQg8iZr,Ng6H6G2hTq1QIUwoIiXtCP" />
           <Link Id="IvAI4RdCrtROgCudgD70xB" Ids="G5ULucRIN4zLtkggwqfVGd,M0JvFsqFOWKPntGAjbPJCn" />
+          <Link Id="HDupML6O0pyPzrD7av0eNo" Ids="EjKoAuClYPTN2LDta2Nf5l,PQTEtbXrpfvPaMTMwNMGMR" />
+          <Link Id="PKPsLTIWI1mQVbcEa57VJl" Ids="D2Kj3HlrJkMOMpiwu4Wfzk,SUDrmac9HndLuE0cQg8iZr" />
+          <Link Id="H8EFKr5iGxzMvAetAKtvIC" Ids="SUDrmac9HndLuE0cQg8iZr,MUgext894YnPwZEt0LIaTR" />
         </Patch>
       </Node>
     </Canvas>
@@ -118,5 +131,5 @@
     </Node>
   </Patch>
   <PlatformDependency Id="NUHPG3KW0u9N618rl5LZ6K" Location="System.Drawing.dll" />
-  <NugetDependency Id="SENWeU4Djy6LQBKexVuawy" Location="VL.QRCode" Version="2019.2.0-0342-g6bc9b61985" />
+  <NugetDependency Id="SENWeU4Djy6LQBKexVuawy" Location="VL.QRCode" Version="0.0.4-alpha" />
 </Document>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="RdcxjrwQCoxMaElrquZE6c" Summary="A wrapper for the zxing qr-code library" Authors="vvvv group" Credits="https://github.com/micjahn/ZXing.Net" LicenseUrl="https://github.com/micjahn/ZXing.Net/blob/master/COPYING" ProjectUrl="https://vvvv.org/" LanguageVersion="2020.3.0.75" Version="0.128">
-  <NugetDependency Id="IAtRauiJDyMOXAth643W9i" Location="VL.CoreLib" Version="2020.3.0-0075-g6ca65d0b48" />
+<Document xmlns:p="property" Id="RdcxjrwQCoxMaElrquZE6c" Summary="A wrapper for the zxing qr-code library" Authors="vvvv group" Credits="https://github.com/micjahn/ZXing.Net" LicenseUrl="https://github.com/micjahn/ZXing.Net/blob/master/COPYING" ProjectUrl="https://vvvv.org/" LanguageVersion="2021.4.11.1341" Version="0.128">
+  <NugetDependency Id="IAtRauiJDyMOXAth643W9i" Location="VL.CoreLib" Version="2021.4.11" />
   <Patch Id="GpDunvIQ9GGPmuU9GJYaB4">
     <Canvas Id="FsZDZKxUERtNB8jZQjnXIg" DefaultCategory="IO.Barcode" CanvasType="FullCategory">
       <!--
@@ -300,10 +300,9 @@
             <Pad Id="FXdL8vA5lxCNcLCoaHL21p" Bounds="151,163" />
             <ControlPoint Id="IKfQmVrJDk2LOF6gLrkZNV" Bounds="238,891" />
             <ControlPoint Id="I52Ftb2pc7ZMoAlnn7YTzr" Bounds="319,890" />
-            <ControlPoint Id="SydPVH4C512MupVzTXImjJ" Bounds="249,139" />
-            <ControlPoint Id="RAzjVhuUlHbPMEdHdqyWHj" Bounds="316,137" />
+            <ControlPoint Id="RAzjVhuUlHbPMEdHdqyWHj" Bounds="82,151" />
             <ControlPoint Id="CMHoYBhp8fvLxlTkZcU0WD" Bounds="502,894" />
-            <Node Bounds="136,204,633,658" Id="RG0L6QKY1jUN3mszKaWXmu">
+            <Node Bounds="136,189,635,673" Id="RG0L6QKY1jUN3mszKaWXmu">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -513,21 +512,20 @@
                     <Patch Id="P6eq7SXH2j5QG0SBmYfTer" Name="Then" />
                   </Patch>
                 </Node>
+                <Node Bounds="482,212,67,26" Id="NylAAxur7xULZPM8VjJl0b">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Bitmap" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Bitmap" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="FromImage" />
+                  </p:NodeReference>
+                  <Pin Id="HV7IegwJrWWLc1R5e3TGVj" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Oim6vpq0LvYLKk1AnxToSG" Name="Copy" Kind="InputPin" />
+                  <Pin Id="QgvNzg7mk5rLAo7BB6wZuM" Name="Result" Kind="OutputPin" />
+                </Node>
               </Patch>
             </Node>
+            <ControlPoint Id="Guu0QnoVak3PinKd6SznWF" Bounds="487,147" />
           </Canvas>
-          <Patch Id="PB9LeWlPFAgLrJySPFglKd" Name="Create" ParticipatingElements="CZyIUjoD3FrNo4JOu6ixJu" />
-          <Patch Id="LeV3aJyPGwNPCZCAY0WkZb" Name="Update">
-            <Pin Id="QsS2TL0oGkWOU5sFmwGLku" Name="Text" Kind="OutputPin" />
-            <Pin Id="BZmJGs5PFwBQWozqxlvdoe" Name="Bitmap" Kind="InputPin" />
-            <Pin Id="EZTq14f48HxMeL9vkY14dJ" Name="Decode" Kind="InputPin" DefaultValue="False">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="SAn3FYBD4PRPkKzYeEmaV2" Name="Format" Kind="OutputPin" />
-            <Pin Id="LdLqUpjywxwPjxGsZjyuEN" Name="Points" Kind="OutputPin" />
-          </Patch>
           <ProcessDefinition Id="TdHEY465EmnMkL9dnLkMTF">
             <Fragment Id="VaTfmU2JDK9PCkCSO5pkSs" Patch="PB9LeWlPFAgLrJySPFglKd" Enabled="true" />
             <Fragment Id="AktEpXrs5TdL5CJqCAAsGZ" Patch="LeV3aJyPGwNPCZCAY0WkZb" Enabled="true" />
@@ -536,11 +534,8 @@
           <Link Id="SUViFTDDFdzL05JNgRPtZS" Ids="FXdL8vA5lxCNcLCoaHL21p,CnBxGLNIkznLs43dSJmB63" />
           <Link Id="Fp4FxPAfOAiLQN2q0koLIG" Ids="IKfQmVrJDk2LOF6gLrkZNV,QsS2TL0oGkWOU5sFmwGLku" IsHidden="true" />
           <Link Id="AysQFGzDPrCO5Wy86KpZTt" Ids="I52Ftb2pc7ZMoAlnn7YTzr,SAn3FYBD4PRPkKzYeEmaV2" IsHidden="true" />
-          <Link Id="JeGrRC7ybNXNDuVVI54tKz" Ids="BZmJGs5PFwBQWozqxlvdoe,SydPVH4C512MupVzTXImjJ" IsHidden="true" />
           <Link Id="KA77wHx0XP1M4if6gtY1j0" Ids="EZTq14f48HxMeL9vkY14dJ,RAzjVhuUlHbPMEdHdqyWHj" IsHidden="true" />
           <Link Id="RPQHJBrOGJmMVFeLTFIjXs" Ids="CMHoYBhp8fvLxlTkZcU0WD,LdLqUpjywxwPjxGsZjyuEN" IsHidden="true" />
-          <Link Id="FmGbHthZGmUNBtYE7PhjtJ" Ids="SydPVH4C512MupVzTXImjJ,ElMYW2BOITtO6yLpnO9Ulg" />
-          <Link Id="ViejirgGM8kO2kUVnnYIgy" Ids="SydPVH4C512MupVzTXImjJ,OAhKVjCqeRIPCCa2A9zzKb" />
           <Link Id="QqoKmH9OvrgL5GrocWjTec" Ids="RAzjVhuUlHbPMEdHdqyWHj,PgRmGCwMkT3LPVYPdUZNre" />
           <Link Id="NOw6yiY4mPLPLI7kNzk25R" Ids="HvDg8ewerNmL5YOcMhWzEm,JcdcExRWyeCO1rrpXzqkJm" />
           <Link Id="KJjdgeRVUHkMZPVkehzUwi" Ids="HvDg8ewerNmL5YOcMhWzEm,AA2CNPNEDp3Nw2ZOWuCMSQ" />
@@ -575,6 +570,22 @@
           <Link Id="LaAyZW4YEczQPVjr98QBMZ" Ids="Hyxj3N8GOkqM8eX560pN4P,I52Ftb2pc7ZMoAlnn7YTzr" />
           <Link Id="FCXFibVZk8FMQa9R4Qs4Vs" Ids="BSbhJPIus4VPFxTFAxvcfv,NQ7s80jFnhoNhBBuVf40TL" />
           <Link Id="OeLz66mkGdkNM53gCEqigF" Ids="NQ7s80jFnhoNhBBuVf40TL,CMHoYBhp8fvLxlTkZcU0WD" />
+          <Patch Id="PB9LeWlPFAgLrJySPFglKd" Name="Create" ParticipatingElements="CZyIUjoD3FrNo4JOu6ixJu" />
+          <Patch Id="LeV3aJyPGwNPCZCAY0WkZb" Name="Update" ManuallySortedPins="true">
+            <Pin Id="ELN9NNZpemtO2pLg5kk3Eq" Name="Input" Kind="InputPin" Bounds="647,142" />
+            <Pin Id="EZTq14f48HxMeL9vkY14dJ" Name="Decode" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="QsS2TL0oGkWOU5sFmwGLku" Name="Text" Kind="OutputPin" />
+            <Pin Id="SAn3FYBD4PRPkKzYeEmaV2" Name="Format" Kind="OutputPin" />
+            <Pin Id="LdLqUpjywxwPjxGsZjyuEN" Name="Points" Kind="OutputPin" />
+          </Patch>
+          <Link Id="Oo3HbfJmOeJLWx5ReIwl0J" Ids="Guu0QnoVak3PinKd6SznWF,HV7IegwJrWWLc1R5e3TGVj" />
+          <Link Id="LLuh7AO3mmaLZwpWx6TC9b" Ids="ELN9NNZpemtO2pLg5kk3Eq,Guu0QnoVak3PinKd6SznWF" IsHidden="true" />
+          <Link Id="OPcbakowNjdLTbTyaXCr4C" Ids="QgvNzg7mk5rLAo7BB6wZuM,OAhKVjCqeRIPCCa2A9zzKb" />
+          <Link Id="QoCLlgOE3QRMLR2iaG27aF" Ids="QgvNzg7mk5rLAo7BB6wZuM,ElMYW2BOITtO6yLpnO9Ulg" />
         </Patch>
       </Node>
       <Pad Id="T6NCEt0XdgpNhYWWxpCUuy" Bounds="159,155,280,22" ShowValueBox="true" isIOBox="true" Value="https://zxing.github.io/zxing/apidocs/">
@@ -938,5 +949,5 @@
     </Node>
   </Patch>
   <PlatformDependency Id="HU2acGdPZaANr83Pc38vAm" Location="System.Drawing.dll" />
-  <NugetDependency Id="Lr9X1Mm1UUqNUQcQSVEcuS" Location="ZXing.Net" Version="0.16.4" />
+  <NugetDependency Id="GZtagO1dDfSOjrM0FyMI7C" Location="ZXing.Net" Version="0.16.8" />
 </Document>

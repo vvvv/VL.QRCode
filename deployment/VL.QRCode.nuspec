@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.QRCode</id>
-    <version>0.0.5-alpha</version>
+    <version>0.0.6-alpha</version>
     <title>VL.QRCode</title>
-    <authors>vvvv, zxing</authors>
+    <authors>vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.QRCode</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>QRCode encoder and decoder for VL</summary>
     <description>QRCode encoder and decoder for VL</description>
-    <tags>VL, zxing</tags>
+    <tags>VL, zxing, barcode, qrcode</tags>
 	<license type="expression">Apache-2.0</license>
 	<dependencies>
-		<dependency id="ZXing.Net" version="0.16.4" />
+		<dependency id="ZXing.Net" version="0.16.8" />
     </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>

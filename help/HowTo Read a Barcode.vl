@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="B0XDhEu43EWNBKb8PJAlu3" LanguageVersion="2021.4.11.1341" Version="0.128">
+  <NugetDependency Id="RQdFPSVnKhDMcFQRhY42Yi" Location="VL.CoreLib" Version="2021.4.11" />
+  <Patch Id="VUI6WiMA6JzN5QzO9beQx9">
+    <Canvas Id="SOxI5djNdq9OKFT8ADsTlK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="JlwjjyO60m1Ne5OMm3qMSZ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="IAtIBOIFichNV756IUFI0b">
+        <Canvas Id="CIL2djmapJEOXNOG7gH7sP" CanvasType="Group">
+          <Node Bounds="277,354,84,19" Id="HfENTvax0EBP2PguxTLgSr">
+            <p:NodeReference LastCategoryFullName="IO.Barcode" LastSymbolSource="VL.QRCode.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BarcodeReader" />
+            </p:NodeReference>
+            <Pin Id="OPNDTa3GqWLO2KoIUSWAIl" Name="Input" Kind="InputPin" />
+            <Pin Id="UKPU7Kw9rteONKJhpzfzps" Name="Decode" Kind="InputPin" />
+            <Pin Id="NAWTfxsjDGFPew0051DgBr" Name="Text" Kind="OutputPin" />
+            <Pin Id="FvSZ36FCwBMMieEJPDGfRN" Name="Format" Kind="OutputPin" />
+            <Pin Id="KGT9kVxN49YOwU8ubhcS9P" Name="Points" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QptGvgCpuUdQPkwhXOsWUe" Comment="Decode" Bounds="358,307,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LcDqAtq2seFQdL4adcdGKC" Comment="Text" Bounds="279,445,250,57" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SS8mBOLiT5JLfY6ByNblci" Comment="Format" Bounds="318,398,210,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="277,164,105,19" Id="KX8fUoqtnlFMzeh1vyZnD2">
+            <p:NodeReference LastCategoryFullName="Video.MediaFoundation" LastSymbolSource="VL.Video.MediaFoundation.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="VideoIn (Skia)" />
+            </p:NodeReference>
+            <Pin Id="KxOHa35ybwiLEz7tVgkkxU" Name="Device" Kind="InputPin" />
+            <Pin Id="EbkVxLCuH6WNqw1VocvRtD" Name="Preferred Size" Kind="InputPin" />
+            <Pin Id="QA0PGEX6kbJNL0SmbsHtJd" Name="Preferred FPS" Kind="InputPin" />
+            <Pin Id="UQlBYrZ89voOEM6XKlKyGZ" Name="Camera Controls" Kind="InputPin" />
+            <Pin Id="FetB9NGZz84QCj6tpD3PXF" Name="Video Controls" Kind="InputPin" />
+            <Pin Id="OlfuJQcuZNsQZlkWCEPAwb" Name="Enabled" Kind="InputPin" />
+            <Pin Id="SPyXf476q7yO1QPzprYIPw" Name="Output" Kind="OutputPin" />
+            <Pin Id="PeltkD77ckpMQnASPqqTc4" Name="Discarded Frames" Kind="OutputPin" />
+            <Pin Id="LwFOJC7q8pDOEgrJfoDQUJ" Name="Actual FPS" Kind="OutputPin" />
+            <Pin Id="PfO8nKO0XVaOrNynTJbYDk" Name="Supported Formats" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="277,229,56,26" Id="CTsWPn4fimlMHz8Lk67ChF">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="ToImage" />
+            </p:NodeReference>
+            <Pin Id="TLtuVfOXfiGL88msNyTgAU" Name="Input" Kind="InputPin" />
+            <Pin Id="KCod0YmzRXoMAcQazYKuDD" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="K1uGNaWeBT5MqgqFRpVeLj" Comment="" Bounds="475,226,190,132" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="PFGGEdVdyHNNIZqKxyDfBW" Name="Create" />
+        <Patch Id="BlZORjfaxSpPJJ7rxmyljO" Name="Update" />
+        <ProcessDefinition Id="P5pfaHjVR3FNb6NzCQjT9E">
+          <Fragment Id="ECsNG22adtcLd1hmPkBjRG" Patch="PFGGEdVdyHNNIZqKxyDfBW" Enabled="true" />
+          <Fragment Id="Mv7I4gp4qX6OyDGkBAigOP" Patch="BlZORjfaxSpPJJ7rxmyljO" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Di0fSbk8nG9Nvai5zDZKQA" Ids="QptGvgCpuUdQPkwhXOsWUe,UKPU7Kw9rteONKJhpzfzps" />
+        <Link Id="Ji0Re1VbrHXMZX73C5vAeo" Ids="NAWTfxsjDGFPew0051DgBr,LcDqAtq2seFQdL4adcdGKC" />
+        <Link Id="LpgtCEIEk5MNBzmLO0CO7Z" Ids="FvSZ36FCwBMMieEJPDGfRN,SS8mBOLiT5JLfY6ByNblci" />
+        <Link Id="UC18JLFIgYLOeAebUOEnDO" Ids="SPyXf476q7yO1QPzprYIPw,TLtuVfOXfiGL88msNyTgAU" />
+        <Link Id="KBZxBCPt23cOhcB48JHW7k" Ids="KCod0YmzRXoMAcQazYKuDD,OPNDTa3GqWLO2KoIUSWAIl" />
+        <Link Id="Kd2ATCJ3GgXNgeaMy03yMn" Ids="SPyXf476q7yO1QPzprYIPw,K1uGNaWeBT5MqgqFRpVeLj" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="BA9pC3L9fL4M7RZZn5vFI5" Location="VL.Skia" Version="2021.4.11" />
+  <NugetDependency Id="IYqAn8HqBDlP7QwPFm3IIu" Location="VL.QRCode" Version="0.0.4-alpha" />
+  <NugetDependency Id="AfbfM9iNg6mMfpJslDgiDE" Location="VL.Video.MediaFoundation" Version="1.0.12" />
+</Document>
