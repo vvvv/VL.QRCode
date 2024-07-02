@@ -8,7 +8,7 @@
     ************************ QRCodeEncoder ************************
 
 -->
-      <Node Name="QRCodeEncoder" Bounds="92,318" Id="ORoFI5YvKoJMUcJNNgoCEJ" Summary="Returns a Spread of byte encoding the given content as QR code" Remarks="Use ToImage to get a QR code image">
+      <Node Name="QRCodeEncoder" Bounds="204,330" Id="ORoFI5YvKoJMUcJNNgoCEJ" Summary="Returns a Spread of byte encoding the given content as QR code" Remarks="Use ToImage to get a QR code image">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -125,7 +125,7 @@
           <Link Id="UlHyRLbkSnlOdZG38OggW1" Ids="N6flvbqzFJYLz3smfRMXx9,MAm1h61G19JOtyTgDYiZ0K" />
         </Patch>
       </Node>
-      <Canvas Id="TwIkJWx63K4PFHDMX8jWWC" Name="Internal" Position="314,317" DefaultCategory="IO.Barcode.Internal">
+      <Canvas Id="TwIkJWx63K4PFHDMX8jWWC" Name="Internal" Position="426,329" DefaultCategory="IO.Barcode.Internal">
         <!--
 
     ************************ AddQuietzone ************************
@@ -279,10 +279,10 @@
       </Canvas>
       <!--
 
-    ************************ BarcodeReader2 ************************
+    ************************ BarcodeReader ************************
 
 -->
-      <Node Name="BarcodeReader2" Bounds="92,255" Id="IsOYmDxZcBxNucdYyT2eJv">
+      <Node Name="BarcodeReader" Bounds="204,267" Id="IsOYmDxZcBxNucdYyT2eJv">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -598,13 +598,13 @@
           <Link Id="OBx7GuvyXJZNTTBetJpjIT" Ids="Iz4gJjY9wlbLAjdtPnuMaq,VehE3ly7EkVQAyHn74mJZy" />
         </Patch>
       </Node>
-      <Pad Id="T6NCEt0XdgpNhYWWxpCUuy" Bounds="159,155,280,22" ShowValueBox="true" isIOBox="true" Value="https://zxing.github.io/zxing/apidocs/">
+      <Pad Id="T6NCEt0XdgpNhYWWxpCUuy" Bounds="188,178,280,22" ShowValueBox="true" isIOBox="true" Value="https://zxing.github.io/zxing/apidocs/">
         <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
           <Choice Kind="TypeFlag" Name="String" />
         </p:TypeAnnotation>
         <p:ValueBoxSettings>
           <p:fontsize p:Type="Int32">9</p:fontsize>
-          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
         </p:ValueBoxSettings>
       </Pad>
       <!--
@@ -612,7 +612,7 @@
     ************************ ToImage ************************
 
 -->
-      <Node Name="ToImage" Bounds="95,381" Id="BFpeyrkMeDXMN81I29h4mV">
+      <Node Name="ToImage" Bounds="207,393" Id="BFpeyrkMeDXMN81I29h4mV">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
