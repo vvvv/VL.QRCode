@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="B0XDhEu43EWNBKb8PJAlu3" LanguageVersion="2021.4.11.1341" Version="0.128">
-  <NugetDependency Id="RQdFPSVnKhDMcFQRhY42Yi" Location="VL.CoreLib" Version="2021.4.11" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="B0XDhEu43EWNBKb8PJAlu3" LanguageVersion="2024.6.5" Version="0.128">
+  <NugetDependency Id="RQdFPSVnKhDMcFQRhY42Yi" Location="VL.CoreLib" Version="2024.6.5" />
   <Patch Id="VUI6WiMA6JzN5QzO9beQx9">
     <Canvas Id="SOxI5djNdq9OKFT8ADsTlK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,19 +15,20 @@
       </p:NodeReference>
       <Patch Id="IAtIBOIFichNV756IUFI0b">
         <Canvas Id="CIL2djmapJEOXNOG7gH7sP" CanvasType="Group">
-          <Node Bounds="277,354,84,19" Id="HfENTvax0EBP2PguxTLgSr">
-            <p:NodeReference LastCategoryFullName="IO.Barcode" LastSymbolSource="VL.QRCode.vl">
+          <Node Bounds="277,384,84,19" Id="HfENTvax0EBP2PguxTLgSr">
+            <p:NodeReference LastCategoryFullName="IO.Barcode" LastDependency="VL.QRCode.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="BarcodeReader" />
             </p:NodeReference>
+            <Pin Id="IOSlP6LJyZMMLvnbFTvR7X" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="OPNDTa3GqWLO2KoIUSWAIl" Name="Input" Kind="InputPin" />
             <Pin Id="UKPU7Kw9rteONKJhpzfzps" Name="Decode" Kind="InputPin" />
             <Pin Id="NAWTfxsjDGFPew0051DgBr" Name="Text" Kind="OutputPin" />
             <Pin Id="FvSZ36FCwBMMieEJPDGfRN" Name="Format" Kind="OutputPin" />
             <Pin Id="KGT9kVxN49YOwU8ubhcS9P" Name="Points" Kind="OutputPin" />
           </Node>
-          <Pad Id="QptGvgCpuUdQPkwhXOsWUe" Comment="Decode" Bounds="358,307,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+          <Pad Id="QptGvgCpuUdQPkwhXOsWUe" Comment="Decode" Bounds="358,337,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -35,26 +36,26 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LcDqAtq2seFQdL4adcdGKC" Comment="Text" Bounds="279,445,250,57" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="SS8mBOLiT5JLfY6ByNblci" Comment="Format" Bounds="318,398,210,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="LcDqAtq2seFQdL4adcdGKC" Comment="Text" Bounds="279,475,250,57" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SS8mBOLiT5JLfY6ByNblci" Comment="Format" Bounds="318,428,210,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="277,164,105,19" Id="KX8fUoqtnlFMzeh1vyZnD2">
-            <p:NodeReference LastCategoryFullName="Video.MediaFoundation" LastSymbolSource="VL.Video.MediaFoundation.vl">
+            <p:NodeReference LastCategoryFullName="Video" LastDependency="VL.Video.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="VideoIn (Skia)" />
+              <Choice Kind="ProcessAppFlag" Name="VideoIn" />
             </p:NodeReference>
-            <Pin Id="KxOHa35ybwiLEz7tVgkkxU" Name="Device" Kind="InputPin" />
+            <Pin Id="Fug1Ch04iu0Pk9nMJT55Em" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KxOHa35ybwiLEz7tVgkkxU" Name="Device" Kind="InputPin" DefaultValue="Default" />
             <Pin Id="EbkVxLCuH6WNqw1VocvRtD" Name="Preferred Size" Kind="InputPin" />
             <Pin Id="QA0PGEX6kbJNL0SmbsHtJd" Name="Preferred FPS" Kind="InputPin" />
             <Pin Id="UQlBYrZ89voOEM6XKlKyGZ" Name="Camera Controls" Kind="InputPin" />
             <Pin Id="FetB9NGZz84QCj6tpD3PXF" Name="Video Controls" Kind="InputPin" />
             <Pin Id="OlfuJQcuZNsQZlkWCEPAwb" Name="Enabled" Kind="InputPin" />
             <Pin Id="SPyXf476q7yO1QPzprYIPw" Name="Output" Kind="OutputPin" />
-            <Pin Id="PeltkD77ckpMQnASPqqTc4" Name="Discarded Frames" Kind="OutputPin" />
             <Pin Id="LwFOJC7q8pDOEgrJfoDQUJ" Name="Actual FPS" Kind="OutputPin" />
             <Pin Id="PfO8nKO0XVaOrNynTJbYDk" Name="Supported Formats" Kind="OutputPin" />
           </Node>
-          <Node Bounds="277,229,56,26" Id="CTsWPn4fimlMHz8Lk67ChF">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
+          <Node Bounds="277,274,56,26" Id="CTsWPn4fimlMHz8Lk67ChF">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
                 <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
@@ -64,7 +65,20 @@
             <Pin Id="TLtuVfOXfiGL88msNyTgAU" Name="Input" Kind="InputPin" />
             <Pin Id="KCod0YmzRXoMAcQazYKuDD" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="K1uGNaWeBT5MqgqFRpVeLj" Comment="" Bounds="475,226,190,132" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="277,219,123,19" Id="FSpRegLEv9wL9fxN8ZIF8n">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Video" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="Graphics.Skia.Video" />
+              <Choice Kind="ProcessAppFlag" Name="VideoSourceToSKImage" />
+            </p:NodeReference>
+            <Pin Id="GSRGOdQo3TyLsRojMObpnF" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JeiimFj7GtQMxc0RDGjnXa" Name="Input" Kind="InputPin" />
+            <Pin Id="RuwlTYdyQKgQdHQiQw9GOY" Name="Fallback" Kind="InputPin" />
+            <Pin Id="RXigTtOlYY8MWX1UFWsXUy" Name="Prefer Push" Kind="InputPin" />
+            <Pin Id="Le1NZPkGPdbO0GSa6Wt77i" Name="Prefer Gpu" Kind="InputPin" />
+            <Pin Id="V5Q9O24Brs4QC9Dh880WX9" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RuvQQU2TxJHPVpm4cW6Abq" Comment="" Bounds="489,259,190,132" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="PFGGEdVdyHNNIZqKxyDfBW" Name="Create" />
         <Patch Id="BlZORjfaxSpPJJ7rxmyljO" Name="Update" />
@@ -75,13 +89,14 @@
         <Link Id="Di0fSbk8nG9Nvai5zDZKQA" Ids="QptGvgCpuUdQPkwhXOsWUe,UKPU7Kw9rteONKJhpzfzps" />
         <Link Id="Ji0Re1VbrHXMZX73C5vAeo" Ids="NAWTfxsjDGFPew0051DgBr,LcDqAtq2seFQdL4adcdGKC" />
         <Link Id="LpgtCEIEk5MNBzmLO0CO7Z" Ids="FvSZ36FCwBMMieEJPDGfRN,SS8mBOLiT5JLfY6ByNblci" />
-        <Link Id="UC18JLFIgYLOeAebUOEnDO" Ids="SPyXf476q7yO1QPzprYIPw,TLtuVfOXfiGL88msNyTgAU" />
         <Link Id="KBZxBCPt23cOhcB48JHW7k" Ids="KCod0YmzRXoMAcQazYKuDD,OPNDTa3GqWLO2KoIUSWAIl" />
-        <Link Id="Kd2ATCJ3GgXNgeaMy03yMn" Ids="SPyXf476q7yO1QPzprYIPw,K1uGNaWeBT5MqgqFRpVeLj" />
+        <Link Id="MIA7S9RFnaYPYDqwhBSfwP" Ids="V5Q9O24Brs4QC9Dh880WX9,TLtuVfOXfiGL88msNyTgAU" />
+        <Link Id="IcAm5lBXzrgNJ8aNHlzPcj" Ids="SPyXf476q7yO1QPzprYIPw,JeiimFj7GtQMxc0RDGjnXa" />
+        <Link Id="LBRBqagVwisOQorpUoA9wU" Ids="V5Q9O24Brs4QC9Dh880WX9,RuvQQU2TxJHPVpm4cW6Abq" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BA9pC3L9fL4M7RZZn5vFI5" Location="VL.Skia" Version="2021.4.11" />
+  <NugetDependency Id="BA9pC3L9fL4M7RZZn5vFI5" Location="VL.Skia" Version="2024.6.5" />
   <NugetDependency Id="IYqAn8HqBDlP7QwPFm3IIu" Location="VL.QRCode" Version="0.0.4-alpha" />
-  <NugetDependency Id="AfbfM9iNg6mMfpJslDgiDE" Location="VL.Video.MediaFoundation" Version="1.0.12" />
+  <NugetDependency Id="AfbfM9iNg6mMfpJslDgiDE" Location="VL.Video" Version="2024.6.5" />
 </Document>
