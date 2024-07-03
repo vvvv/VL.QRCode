@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="B0XDhEu43EWNBKb8PJAlu3" LanguageVersion="2024.6.5" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="AwOX1RNR7vRNJJoRU4I5Li" LanguageVersion="2024.6.5" Version="0.128">
   <NugetDependency Id="RQdFPSVnKhDMcFQRhY42Yi" Location="VL.CoreLib" Version="2024.6.5" />
   <Patch Id="VUI6WiMA6JzN5QzO9beQx9">
     <Canvas Id="SOxI5djNdq9OKFT8ADsTlK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -20,6 +20,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="BarcodeReader" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IOSlP6LJyZMMLvnbFTvR7X" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="OPNDTa3GqWLO2KoIUSWAIl" Name="Input" Kind="InputPin" />
             <Pin Id="UKPU7Kw9rteONKJhpzfzps" Name="Decode" Kind="InputPin" />
@@ -36,8 +37,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LcDqAtq2seFQdL4adcdGKC" Comment="Text" Bounds="279,475,250,57" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="SS8mBOLiT5JLfY6ByNblci" Comment="Format" Bounds="318,428,210,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="LcDqAtq2seFQdL4adcdGKC" Comment="Text" Bounds="279,580,250,57" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SS8mBOLiT5JLfY6ByNblci" Comment="Format" Bounds="318,533,210,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="277,164,105,19" Id="KX8fUoqtnlFMzeh1vyZnD2">
             <p:NodeReference LastCategoryFullName="Video" LastDependency="VL.Video.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -79,6 +80,7 @@
             <Pin Id="V5Q9O24Brs4QC9Dh880WX9" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="RuvQQU2TxJHPVpm4cW6Abq" Comment="" Bounds="489,259,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="D9il647RuN8OmrsjNsWpR1" Comment="Points" Bounds="358,425,35,33" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="PFGGEdVdyHNNIZqKxyDfBW" Name="Create" />
         <Patch Id="BlZORjfaxSpPJJ7rxmyljO" Name="Update" />
@@ -93,6 +95,7 @@
         <Link Id="MIA7S9RFnaYPYDqwhBSfwP" Ids="V5Q9O24Brs4QC9Dh880WX9,TLtuVfOXfiGL88msNyTgAU" />
         <Link Id="IcAm5lBXzrgNJ8aNHlzPcj" Ids="SPyXf476q7yO1QPzprYIPw,JeiimFj7GtQMxc0RDGjnXa" />
         <Link Id="LBRBqagVwisOQorpUoA9wU" Ids="V5Q9O24Brs4QC9Dh880WX9,RuvQQU2TxJHPVpm4cW6Abq" />
+        <Link Id="UhxSS5ZxiWJMI15aGE1S9O" Ids="KGT9kVxN49YOwU8ubhcS9P,D9il647RuN8OmrsjNsWpR1" />
       </Patch>
     </Node>
   </Patch>

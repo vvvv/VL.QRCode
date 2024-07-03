@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="B0XDhEu43EWNBKb8PJAlu3" LanguageVersion="2020.2.4.330" Version="0.128">
-  <NugetDependency Id="RQdFPSVnKhDMcFQRhY42Yi" Location="VL.CoreLib" Version="2020.2.4-0329-g9de69ed14b" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="B0XDhEu43EWNBKb8PJAlu3" LanguageVersion="2024.6.5" Version="0.128">
+  <NugetDependency Id="RQdFPSVnKhDMcFQRhY42Yi" Location="VL.CoreLib" Version="2024.6.5" />
   <Patch Id="VUI6WiMA6JzN5QzO9beQx9">
     <Canvas Id="SOxI5djNdq9OKFT8ADsTlK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -16,43 +16,47 @@
       <Patch Id="IAtIBOIFichNV756IUFI0b">
         <Canvas Id="CIL2djmapJEOXNOG7gH7sP" CanvasType="Group">
           <Node Bounds="430,289,89,19" Id="RiZayRfaDXpMJJvwwC1qxg">
-            <p:NodeReference LastCategoryFullName="IO.Barcode" LastSymbolSource="VL.QRCode.vl">
+            <p:NodeReference LastCategoryFullName="IO.Barcode" LastDependency="VL.QRCode.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="QRCodeEncoder" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="FBCU5QEZ6sFOJ8PcpYPFoJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Eh4dhYGVxUsMlxGHwcJxGw" Name="Contents" Kind="InputPin" />
             <Pin Id="UaX1sqLgCiZNZOebCQvoc7" Name="Quiet Zone" Kind="InputPin" />
             <Pin Id="EvuNGnKZS98Ns6FRPBkaBf" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="430,380,56,19" Id="Vn5lamUOFM8M4JfEboHS1R">
-            <p:NodeReference LastCategoryFullName="IO.Barcode" LastSymbolSource="VL.QRCode.vl">
+          <Node Bounds="430,389,56,19" Id="Vn5lamUOFM8M4JfEboHS1R">
+            <p:NodeReference LastCategoryFullName="IO.Barcode" LastDependency="VL.QRCode.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ToImage" />
               <CategoryReference Kind="Category" Name="Barcode" NeedsToBeDirectParent="true" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="PjiKFpBBMDxLmQ6hlARY39" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="OfRiEDByHhMNGE9RjxbvhP" Name="Input" Kind="InputPin" />
             <Pin Id="DFRd5KaqnP3MMQnWkZc9Wv" Name="Pixel Size" Kind="InputPin" />
             <Pin Id="VDHssdO6GkIPvusF9dc4J7" Name="Invert" Kind="InputPin" />
             <Pin Id="DURf9P76J7UP7BIMgcTWN3" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="GIP0XEjGkm8M56O701YaFs" Comment="" Bounds="432,438,234,130" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GIP0XEjGkm8M56O701YaFs" Comment="" Bounds="432,438,239,237" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Q4njTcU9wq9MVUyZbe1Grv" Comment="Contents" Bounds="413,243,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TcZtpQjKw5UPvjIAJfwASm" Comment="Pixel Size" Bounds="503,342,35,15" ShowValueBox="true" isIOBox="true" Value="5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="TcZtpQjKw5UPvjIAJfwASm" Comment="Pixel Size" Bounds="458,339,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="UULLZ1Q49QZLLEZ2qYLJtV" Comment="Invert" Bounds="502,368,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="KvczHWoPfZ0NiLYRby6990" Comment="Quiet Zone" Bounds="516,273,35,15" ShowValueBox="true" isIOBox="true" Value="2">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
@@ -72,6 +76,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BA9pC3L9fL4M7RZZn5vFI5" Location="VL.Skia" Version="2020.2.4-0329-g9de69ed14b" />
-  <NugetDependency Id="IYqAn8HqBDlP7QwPFm3IIu" Location="VL.QRCode" Version="2020.2.4-0329-g9de69ed14b" />
+  <NugetDependency Id="BA9pC3L9fL4M7RZZn5vFI5" Location="VL.Skia" Version="2024.6.5" />
+  <NugetDependency Id="IYqAn8HqBDlP7QwPFm3IIu" Location="VL.QRCode" Version="0.0.4-alpha" />
 </Document>
