@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="B0XDhEu43EWNBKb8PJAlu3" LanguageVersion="2024.6.5" Version="0.128">
-  <NugetDependency Id="RQdFPSVnKhDMcFQRhY42Yi" Location="VL.CoreLib" Version="2024.6.5" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="B0XDhEu43EWNBKb8PJAlu3" LanguageVersion="2024.6.6" Version="0.128">
+  <NugetDependency Id="RQdFPSVnKhDMcFQRhY42Yi" Location="VL.CoreLib" Version="2024.6.6" />
   <Patch Id="VUI6WiMA6JzN5QzO9beQx9">
     <Canvas Id="SOxI5djNdq9OKFT8ADsTlK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="IAtIBOIFichNV756IUFI0b">
         <Canvas Id="CIL2djmapJEOXNOG7gH7sP" CanvasType="Group">
-          <Node Bounds="430,289,89,19" Id="RiZayRfaDXpMJJvwwC1qxg">
+          <Node Bounds="273,208,89,19" Id="RiZayRfaDXpMJJvwwC1qxg">
             <p:NodeReference LastCategoryFullName="IO.Barcode" LastDependency="VL.QRCode.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="QRCodeEncoder" />
@@ -26,7 +26,7 @@
             <Pin Id="UaX1sqLgCiZNZOebCQvoc7" Name="Quiet Zone" Kind="InputPin" />
             <Pin Id="EvuNGnKZS98Ns6FRPBkaBf" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="430,389,56,19" Id="Vn5lamUOFM8M4JfEboHS1R">
+          <Node Bounds="273,338,56,19" Id="Vn5lamUOFM8M4JfEboHS1R">
             <p:NodeReference LastCategoryFullName="IO.Barcode" LastDependency="VL.QRCode.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ToImage" />
@@ -39,27 +39,53 @@
             <Pin Id="VDHssdO6GkIPvusF9dc4J7" Name="Invert" Kind="InputPin" />
             <Pin Id="DURf9P76J7UP7BIMgcTWN3" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="GIP0XEjGkm8M56O701YaFs" Comment="" Bounds="432,438,239,237" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Q4njTcU9wq9MVUyZbe1Grv" Comment="Contents" Bounds="413,243,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+          <Pad Id="GIP0XEjGkm8M56O701YaFs" Comment="" Bounds="275,387,113,137" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Q4njTcU9wq9MVUyZbe1Grv" Comment="Contents" Bounds="275,162,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TcZtpQjKw5UPvjIAJfwASm" Comment="Pixel Size" Bounds="458,339,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+          <Pad Id="TcZtpQjKw5UPvjIAJfwASm" Comment="Pixel Size" Bounds="301,287,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UULLZ1Q49QZLLEZ2qYLJtV" Comment="Invert" Bounds="502,368,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="UULLZ1Q49QZLLEZ2qYLJtV" Comment="Invert" Bounds="345,317,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="KvczHWoPfZ0NiLYRby6990" Comment="Quiet Zone" Bounds="516,273,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="KvczHWoPfZ0NiLYRby6990" Comment="Quiet Zone" Bounds="359,180,35,15" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
+          <Node Bounds="469,339,63,19" Id="IR0ouNM4gMANExDNKjGEmS">
+            <p:NodeReference LastCategoryFullName="IO.Barcode" LastDependency="VL.QRCode.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToTexture" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="NszEk0IoogrQLrzwsUDNL7" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NS4She9zIvINzTuiYfKcGw" Name="Input" Kind="InputPin" />
+            <Pin Id="T7q5c7v2iJuNI7KWHK1m8l" Name="Pixel Size" Kind="InputPin" />
+            <Pin Id="BPRst65x5FhNqTHbdyEuwU" Name="Invert" Kind="InputPin" />
+            <Pin Id="U9bq7aEPxmFN65zhm8OskU" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="MFvoPuETamFL7zROOmovZg" Comment="Pixel Size" Bounds="500,287,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="I6TvB7LCnG0M36jPHNPRr9" Comment="Invert" Bounds="551,314,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SKj17rUopPdPV3naN1KQmO" Comment="" Bounds="471,391,119,173" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="PFGGEdVdyHNNIZqKxyDfBW" Name="Create" />
         <Patch Id="BlZORjfaxSpPJJ7rxmyljO" Name="Update" />
@@ -73,9 +99,13 @@
         <Link Id="OMU9L037Uv7M5V8gddAD0C" Ids="TcZtpQjKw5UPvjIAJfwASm,DFRd5KaqnP3MMQnWkZc9Wv" />
         <Link Id="L06b0lDXputOcgXyhOFQt3" Ids="UULLZ1Q49QZLLEZ2qYLJtV,VDHssdO6GkIPvusF9dc4J7" />
         <Link Id="BzGzYG4YjE8PZFPRxfK08x" Ids="KvczHWoPfZ0NiLYRby6990,UaX1sqLgCiZNZOebCQvoc7" />
+        <Link Id="VHLDzhv2QTRPAM5Lgz1xxC" Ids="EvuNGnKZS98Ns6FRPBkaBf,NS4She9zIvINzTuiYfKcGw" />
+        <Link Id="PK2GEteMatZL8Suv5TqKNU" Ids="MFvoPuETamFL7zROOmovZg,T7q5c7v2iJuNI7KWHK1m8l" />
+        <Link Id="KUb2sR1CElmN8lWxL2k4Ez" Ids="I6TvB7LCnG0M36jPHNPRr9,BPRst65x5FhNqTHbdyEuwU" />
+        <Link Id="TLog3VyEtm5O2QEgC6PW5x" Ids="U9bq7aEPxmFN65zhm8OskU,SKj17rUopPdPV3naN1KQmO" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BA9pC3L9fL4M7RZZn5vFI5" Location="VL.Skia" Version="2024.6.5" />
+  <NugetDependency Id="BA9pC3L9fL4M7RZZn5vFI5" Location="VL.Skia" Version="2024.6.6" />
   <NugetDependency Id="IYqAn8HqBDlP7QwPFm3IIu" Location="VL.QRCode" Version="0.0.4-alpha" />
 </Document>
